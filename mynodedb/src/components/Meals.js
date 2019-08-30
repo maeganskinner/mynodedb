@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import Meal from "./Meal";
 import axios from "axios";
 
-export default class Meals extends Component() {
+export default class Meals extends Component {
     constructor() {
         super();
         this.state = {
@@ -23,8 +23,8 @@ export default class Meals extends Component() {
     render() {
         return (
             <div>
-                {this.meals.map((meal, index) => (
-            ))}
+            <h1> Meals</h1>
+               
             </div>
         );
     }

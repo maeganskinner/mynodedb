@@ -1,6 +1,6 @@
 
 const meals = [
-    {
+    { 
       name: "Black Bean and Corn Salad",
       image:
         "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/8/22/0/VB0109H_Grilled-Corn-and-Bean-Salad_s4x3.jpg.rend.hgtvcom.826.620.suffix/1440430425179.jpeg"
@@ -21,7 +21,7 @@ const meals = [
     },
 
     {
-        name: "Zuchinni Lasgana",
+        name: "Zucchini Lasagna",
         image: "https://www.jocooks.com/wp-content/uploads/2013/11/zucchini-lasagna-1-1.jpg"
       }
   ];
@@ -31,10 +31,7 @@ const meals = [
     res.json(meals);
   };
   
-  //const addWish = (req, res) => {
-    //wishes.push(req.body);
-    //res.json(meals);
-  //};
+  
   module.exports = {
       getMeals
   }

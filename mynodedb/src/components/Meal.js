@@ -11,5 +11,6 @@ export default class Meal extends React.Component {
             selected: false
         };
     }
+    
 }
     
