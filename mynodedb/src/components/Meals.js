@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import Meal from "./Meal";
+import Meal from "./Meal.js";
 import axios from "axios";
 
 export default class Meals extends Component {
@@ -23,13 +23,14 @@ export default class Meals extends Component {
     render() {
         return (
             <div>
-            <h1> Meals</h1>
-               
+                {this.state.meals.map((meal, index) => (
+                    <Meal
+                        name={meal.name}
+                        image={meal.image}
+                        index={index}
+                    />
+                ))}
             </div>
         );
     }
-
 }
-
-
-

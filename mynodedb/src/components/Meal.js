@@ -5,12 +5,12 @@ import axios from "axios";
 
 // takes in props
 export default class Meal extends React.Component {
-    constructor() {
-        super();
+    constructor(prop) {
+        super(prop);
         this.state = {
             selected: false
         };
     }
-    
+
 }
     
