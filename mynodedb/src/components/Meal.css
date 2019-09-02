@@ -1,0 +1,11 @@
+.name {
+    size: 75px;
+
+}
+.image {
+    max-width: 20vw;
+    border: 1px solid black;
+    margin: 8px;
+}
+
+

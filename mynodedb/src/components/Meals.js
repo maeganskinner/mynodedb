@@ -14,6 +14,7 @@ export default class Meals extends Component {
         axios
             .get("/api/meals")
             .then(response => {
+                console.log(response.data)
                 this.setState({ meals: response.data });
             })
             .catch(err => {
@@ -23,14 +24,17 @@ export default class Meals extends Component {
     render() {
         return (
             <div>
-                {this.state.meals.map((meal, index) => (
-                    <Meal
+                {this.state.meals.map((meal, index) =>
+                    < Meal
                         name={meal.name}
                         image={meal.image}
                         index={index}
                     />
-                ))}
+
+                )}
             </div>
+
         );
     }
 }
+

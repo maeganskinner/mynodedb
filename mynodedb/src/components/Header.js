@@ -1,11 +1,23 @@
-//this function really isnt doing anything. All of the operation is coming from the app.js it seems
 import React from "react";
+import "../App.css";
 
 //props inside curley brackets
-export default function Header() { 
+export default function Header() {
   return (
     <header>
-      <h1>Meal Prep Me</h1>
+      <div className="container">
+        <h1 className="jumbotron">
+          <strong>Meal Prep Me!</strong>
+        </h1>
+      </div>
+      <div>
+        <p>
+          Deciding what to make during meal prepping can be hard.
+        </p>
+      </div>
+      <p>
+        Luckily for you, we compile a list of easy to make foods to help make your decison easier.
+      </p>
     </header>
   );
 }

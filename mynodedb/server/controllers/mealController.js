@@ -12,7 +12,7 @@ const meals = [
 
     {
         name: "Grilled Salmon and Pineapple Salsa",
-        image: "https://hips.hearstapps.com/del.h-cdn.co/assets/16/21/1600x1066/gallery-1464202521-delish-grilled-salmon-pineapple-salsa.jpg?resize=768:*"
+        image: "https://hips.hearstapps.com/del.h-cdn.co/assets/16/21/1600x1066/gallery-1464202521-delish-grilled-salmon-pineapple-salsa.jpg"
     },
 
     {
@@ -25,13 +25,54 @@ const meals = [
         image: "https://www.jocooks.com/wp-content/uploads/2013/11/zucchini-lasagna-1-1.jpg"
       }
   ];
-  
-  
+
+  const pastMeals = [
+    { 
+      name: "Crockpot Chicken Chili",
+      image:
+        "https://fitfoodiefinds.com/wp-content/uploads/2018/11/chili2.jpg"
+    },
+    { 
+      name: "Honey Ginger Chicken Stir Fry",
+      image:
+        "https://fitfoodiefinds.com/wp-content/uploads/2018/02/squaregingerbowls-600x600.png"
+    },
+    { 
+      name: "Southwest Chicken Casserole",
+      image:
+        "https://fitfoodiefinds.com/wp-content/uploads/2014/01/square-600x600.png"
+    },
+    { 
+      name: "Vegan Pasta Bake with White Wine Sauce",
+      image:
+        "https://fitfoodiefinds.com/wp-content/uploads/2019/02/PASTA-2-2-600x600.jpg"
+    },
+    { 
+      name: "Mederteraninan Vegan Buddah Bowl Recipe",
+      image:
+        "https://fitfoodiefinds.com/wp-content/uploads/2019/01/med-buddha-bowl-2-sq-600x600.jpg"
+    }
+
+  ]
+
+
+
+  const addMeal = (req,res) => {
+    
+  }
+    
+
   const getMeals = (req, res) => {
     res.json(meals);
   };
   
+  const getPastMeals = (req, res) => {
+    res.json(pastMeals);
+  };
+  
   
   module.exports = {
-      getMeals
+      getMeals,
+      getPastMeals,
+      addMeal
   }

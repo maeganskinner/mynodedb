@@ -1,10 +1,9 @@
-// THIS IS HOW YOUR MEAL BEHAVES
 import React from 'react';
 import "./Meal.css";
 
 
-// takes in props
-export default class Meal extends React.Component {
+
+export default class PastMeal extends React.Component {
     constructor(prop) {
         super(prop);
         this.state = {
@@ -12,11 +11,10 @@ export default class Meal extends React.Component {
         };
     }
     render () {
-        return ( 
-            <div key={this.props.index}>
+        return (
+            <div>
                 <h1 className="name"> {this.props.name} </h1>
                 <img className="image" src={this.props.image} 
-
                 />
             </div>
         );
