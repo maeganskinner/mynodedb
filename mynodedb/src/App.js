@@ -2,7 +2,8 @@ import React from 'react';
 import "./App.css";
 import Header from "./components/Header";
 import Meals from "./components/Meals";
-import AddMeal from "./components/AddMeal"
+import AddMeal from "./components/AddMeal";
+import PastMeals from "./components/PastMeals";
 import axios from "axios"
 
 export default class App extends React.Component {
@@ -10,6 +11,7 @@ export default class App extends React.Component {
     super()
     this.state = {
       meals: []
+        
     }
   }
 
@@ -23,13 +25,13 @@ export default class App extends React.Component {
       .catch(error => console.log(error))
   }
   render() {
-    console.log(this.state)
     return (
       <div>
         <Header />
         <nav>
-          <button type="button" className="btn btn-primary btn-lg">
+          <button onClick={() => this.setState({ section: "PastMeals" })} type="button" className="btn btn-primary btn-lg">
             Past Meals
+            <PastMeals />
         </button>
         </nav>
         <div>

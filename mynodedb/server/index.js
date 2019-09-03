@@ -10,6 +10,7 @@ app.use(express.json());
 app.get("/api/meals", mealController.getMeals);
 app.get("/api/pastMeals", mealController.getPastMeals);
 app.post("/api/addMeal", mealController.addMeal);
+app.delete("/api/meal/:id", mealController.deleteMeal);
 
 
 app.listen(5050, () => {

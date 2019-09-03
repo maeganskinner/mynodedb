@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Axios from "axios";
+import axios from "axios";
 
 
 export default class Add extends Component {
@@ -22,7 +22,7 @@ export default class Add extends Component {
       <form
         onSubmit={e => {
           e.preventDefault();
-          Axios.post("/api/addMeal", {
+          axios.post("/api/addMeal", {
             name: this.state.name,
             image: this.state.image
           })

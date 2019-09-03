@@ -1,23 +1,30 @@
-import React from 'react';
+import React, { Component } from "react";
 import "./Meal.css";
+import axios from "axios"
 
 
 
 export default class PastMeal extends React.Component {
-    constructor(prop) {
-        super(prop);
+    constructor(props) {
+        super(props);
         this.state = {
             selected: false
         };
     }
-    render () {
+    render() { 
         return (
-            <div>
-                <h1 className="name"> {this.props.name} </h1>
-                <img className="image" src={this.props.image} 
-                />
+            <div
+                onClick={() => {
+                    this.setState({ selected: !this.state.selected });
+                }}
+
+            >
+                <div key={this.props.index}>
+                    <h1 className="name"> {this.props.name} </h1>
+                    <img className="image" src={this.props.image} />
+                    
+                </div>
             </div>
         );
     }
 }
-    

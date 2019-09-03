@@ -4,12 +4,12 @@ import axios from "axios";
 
 export default class Meals extends Component {
     constructor() {
-        super();
+        super()
         this.state = {
             meals: []
-        };
+        }
     }
-    //component did mount method here, then render, then return
+
     componentDidMount() {
         axios
             .get("/api/meals")
@@ -25,16 +25,13 @@ export default class Meals extends Component {
         return (
             <div>
                 {this.state.meals.map((meal, index) =>
-                    < Meal
+                    <Meal
                         name={meal.name}
                         image={meal.image}
                         index={index}
                     />
-
                 )}
             </div>
-
         );
     }
 }
-
