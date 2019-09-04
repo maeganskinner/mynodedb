@@ -6,8 +6,10 @@ export default class Meals extends Component {
     constructor() {
         super()
         this.state = {
-            meals: []
-        }
+            name: "",
+            image: "",
+            index: ""
+        };
     }
 
     componentDidMount() {

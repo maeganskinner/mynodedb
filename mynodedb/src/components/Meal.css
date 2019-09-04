@@ -6,6 +6,9 @@
     max-width: 20vw;
     border: 1px solid black;
     margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
